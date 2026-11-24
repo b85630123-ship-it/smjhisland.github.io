@@ -24,12 +24,15 @@
       <div class="intro-copy">
         <p class="eyebrow"><span>✳</span> 一座島，裝得下好多種可能</p>
         <h1 id="title">山海之間，<br><em>遇見石門。</em></h1>
-        <p class="lead">在龍潭的綠意與湖光之間，展開一段自在探索的校園旅程。</p>
+        <p class="lead">點選一座島，走近看看校園日常如何隨天氣改變。</p>
       </div>
-      <div class="explore-tip"><span class="drag-icon">↗</span><span>拖曳環視群島<br><b>點選島嶼探索校務</b></span></div>
+      <div class="explore-tip"><span class="drag-icon">↗</span><span>拖曳環視群島<br><b>點島進入近景・切換天氣</b></span></div>
     </section>
     <section class="world" aria-label="石門國中互動品牌群島">
       <div id="scene" role="img" aria-label="可旋轉縮放的低多邊形校園群島"></div>
+      <div class="weather-dock" aria-label="即時天氣與模擬情境"><div class="live-weather" id="liveWeather" aria-live="polite">正在取得石門即時天氣…</div><a class="weather-source" href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo 氣象資料・依天氣轉換場景 ↗</a><div class="weather-modes"><button class="weather-button active" data-weather="live">🌐 即時</button><button class="weather-button" data-weather="sunny">☀️ 晴天模擬</button><button class="weather-button" data-weather="rain">🌧️ 下雨模擬</button><button class="weather-button" data-weather="night">🌙 夜晚模擬</button></div></div>
+      <button id="overviewButton" class="overview-button" hidden>← 返回群島</button>
+      <div id="islandStatus" class="island-status" hidden><b></b><span>拖曳近距離環視・滾輪縮放</span></div>
       <div class="scene-caption"><span class="caption-line"></span> SHIMEN · LEARNING ARCHIPELAGO</div>
       <div class="zoom-controls" aria-label="視角控制"><button id="zoomOut" aria-label="縮小">−</button><button id="zoomIn" aria-label="放大">＋</button><button id="resetView" aria-label="重設視角">⌂</button></div>
       <div class="map-legend"><span><i class="legend-dot blue"></i>學習</span><span><i class="legend-dot coral"></i>成長</span><span><i class="legend-dot green"></i>生活</span></div>
