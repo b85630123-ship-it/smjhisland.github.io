@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b8e5e4">
+  <meta name="description" content="石門國中品牌群島互動原型：探索校園特色與校務入口。">
+  <title>石門國中・山海之間的學習群島</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="石門國中群島首頁">
+        <span class="brand-mark">石</span><span><b>石門國中</b><small>SHIMEN JUNIOR HIGH SCHOOL</small></span>
+      </a>
+      <div class="top-note"><span class="sun-dot"></span> 桃園・龍潭佳安</div>
+      <a class="official-link" href="https://www.smjh.tyc.edu.tw/index.php" target="_blank" rel="noopener">前往官方網站 <span>↗</span></a>
+    </header>
+    <section class="intro" aria-labelledby="title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span>✳</span> 一座島，裝得下好多種可能</p>
+        <h1 id="title">山海之間，<br><em>遇見石門。</em></h1>
+        <p class="lead">在龍潭的綠意與湖光之間，展開一段自在探索的校園旅程。</p>
+      </div>
+      <div class="explore-tip"><span class="drag-icon">↗</span><span>拖曳環視群島<br><b>點選島嶼探索校務</b></span></div>
+    </section>
+    <section class="world" aria-label="石門國中互動品牌群島">
+      <div id="scene" role="img" aria-label="可旋轉縮放的低多邊形校園群島"></div>
+      <div class="scene-caption"><span class="caption-line"></span> SHIMEN · LEARNING ARCHIPELAGO</div>
+      <div class="zoom-controls" aria-label="視角控制"><button id="zoomOut" aria-label="縮小">−</button><button id="zoomIn" aria-label="放大">＋</button><button id="resetView" aria-label="重設視角">⌂</button></div>
+      <div class="map-legend"><span><i class="legend-dot blue"></i>學習</span><span><i class="legend-dot coral"></i>成長</span><span><i class="legend-dot green"></i>生活</span></div>
+      <div class="mobile-hint">↔ 滑動環視・點選島嶼</div>
+    </section>
+    <section class="quick-links" aria-label="快速入口">
+      <div><span class="quick-icon">⌂</span><span><b>校園入口</b><small>快速抵達重要資訊</small></span></div>
+      <nav id="quickNav"></nav>
+    </section>
+    <footer><span>桃園市立石門國民中學</span><span>以「心」經營教育・以「愛」關懷學生</span><a href="https://www.smjh.tyc.edu.tw/" target="_blank" rel="noopener">官方網站 ↗</a></footer>
+  </main>
+  <div class="modal-backdrop" id="backdrop" hidden>
+    <section class="island-card" role="dialog" aria-modal="true" aria-labelledby="cardTitle">
+      <button class="close-card" id="closeCard" aria-label="關閉">×</button>
+      <div class="card-kicker" id="cardKicker">ISLAND 01</div><div class="card-icon" id="cardIcon">✦</div>
+      <h2 id="cardTitle">學習島</h2><p class="card-subtitle" id="cardSubtitle"></p><p class="card-description" id="cardDescription"></p>
+      <div class="card-links" id="cardLinks"></div>
+      <div class="card-foot">探索更多石門日常 <span>✳</span></div>
+    </section>
+  </div>
+  <noscript><p class="noscript">此互動群島需要啟用 JavaScript 才能探索。你仍可由頁首連結前往石門國中官方網站。</p></noscript>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
